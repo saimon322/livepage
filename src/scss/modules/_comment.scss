@@ -1,0 +1,66 @@
+.comment {
+    position: relative;
+    padding-top: 60px;
+
+    @include media-up(sm) {
+        padding-top: 74px;
+    }
+
+    &:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        display: block;
+        width: 30px;
+        height: 25px;
+        background: url(img/quotes.svg) center / contain no-repeat;
+
+        @include media-up(sm) {
+            width: 42px;
+            height: 33px;
+        }
+    }
+
+    &__title {
+        margin-bottom: 30px;
+
+        @include media-up(sm) {
+            margin-bottom: 36px;
+        }
+
+        @include media-up(md) {
+            margin-bottom: 42px;
+        }
+
+        @include media-up(lg) {
+            margin-bottom: 50px;
+            font-size: 32px;
+        }
+    }
+
+    &__text {
+        max-width: 860px;
+        font-size: 18px;
+        line-height: 24px;
+
+        @include media-up(sm) {
+            font-size: 20px;
+            line-height: 28px;
+        }
+
+        @include media-up(md) {
+            font-size: 22px;
+            line-height: 32px;
+        }
+
+        @include media-up(lg) {
+            font-size: 24px;
+            line-height: 40px;
+        }
+    }
+
+    &__author {
+        margin-top: 56px;
+    }
+}

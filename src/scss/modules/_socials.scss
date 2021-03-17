@@ -1,0 +1,23 @@
+.socials {
+    display: flex;
+}
+
+.social {
+    display: block;
+    width: 36px;
+    height: 36px;
+    padding: 6px;
+    margin-right: 14px;
+    background: #000;
+    border-radius: 50%;
+    text-align: center;
+    transition: .2s;
+
+    &:hover {
+        background: $color-red;
+    }
+
+    img {
+        height: 15px;
+    }
+}

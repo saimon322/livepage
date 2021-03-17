@@ -1,0 +1,50 @@
+.modal-new {
+    background: #000;
+
+    .cross {
+        background-position: 0px -24px;
+        top: 10px;
+        top: 10px;
+    }
+
+    .modal-dialog {
+        height: 100%;
+        margin: 0 auto;
+        padding: 0;
+        display: flex;
+        align-items: center;
+
+        .modal-content {
+            width: 100%;
+            max-width: 412px;
+            padding: 30px 20px;
+            margin: auto;
+            background: #000;
+            border: 0;
+
+            .modal-header {
+                padding: 0;
+                margin-bottom: 30px;
+                text-align: left;
+    
+                h2 {
+                    font-size: 30px;
+                    font-weight: 500;
+                    color: #fff;
+                }
+            }
+    
+            .modal-body {
+                padding: 0;
+            }
+        }
+    }
+
+    .inputbox {
+        border-radius: 3px;
+    }
+
+    .form__btn {
+        margin-top: 0;
+    }
+}

@@ -1,5 +1,21 @@
-// @import "spec/old";
+// Styles OnePix
+
 @import "spec/vars";
 @import "spec/mixins";
 
-@import "modules/career"
+@import "modules/form";
+@import "modules/ratings";
+@import "modules/tabs";
+@import "modules/comment";
+@import "modules/socials";
+@import "modules/posts";
+@import "modules/sources";
+@import "modules/subscribe";
+@import "modules/reviews";
+@import "modules/modal-new";
+
+@import "modules/career";
+@import "modules/vacancy";
+@import "modules/author";
+@import "modules/achievs";
+@import "modules/promo";

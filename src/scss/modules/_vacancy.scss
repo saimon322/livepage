@@ -1,0 +1,149 @@
+// Main section
+.vacancy-main {
+    padding: 50px 0 64px;
+
+    @include media-up(sm) {
+        padding: 70px 0 70px;
+    }
+
+    @include media-up(md) {
+        padding: 90px 0 75px;
+    }
+
+    @include media-up(lg) {
+        padding: 110px 0 80px;
+    }
+
+    h1 {
+        margin-bottom: 40px;
+
+        @include media-up(sm) {
+            margin-bottom: 50px;
+        }
+
+        @include media-up(md) {
+            margin-bottom: 60px;
+        }
+
+        @include media-up(lg) {
+            margin-bottom: 70px;
+        }
+    }
+}
+
+.vacancy-block {
+    &:not(:last-child) {
+        margin-bottom: 54px;
+    }
+
+    &__title {
+        margin-bottom: 24px;
+        font-size: 20px;
+        line-height: 26px;
+    
+        @include media-up(sm) {
+            font-size: 24px;
+            line-height: 32px;
+            margin-bottom: 28px;
+        }
+    
+        span {
+            margin-right: 13px;
+        }
+    }
+    
+    &__text {
+        font-size: 16px;
+        line-height: 24px;
+    
+        @include media-up(sm) {
+            font-size: 18px;
+            line-height: 28px;
+            padding-left: 40px;
+        }
+    
+        ul {
+            padding-left: 20px;
+        }
+    
+        li {
+            margin-bottom: 15px;
+        }
+    }
+}
+
+// Resume block
+.vacancy-resume {
+    margin: 36px 0 64px;
+    padding: 89px 30px;
+    background: $color-white;
+    text-align: center;
+
+    @include media-up(sm) {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 42px 0 70px;
+        padding: 50px 52px 45px 45px;
+    }
+
+    @include media-up(md) {
+        margin: 56px 0 76px;
+    }
+
+    @include media-up(lg) {
+        margin: 72px 0 84px;
+    }
+
+    &__title {
+        margin-bottom: 37px;
+
+        @include media-up(sm) {
+            margin-bottom: 0;
+        }
+
+        @include media-up(lg) {
+            font-size: 32px;
+        }
+    }
+
+    &__btn {
+        padding: 19px 40px 17px;
+        border-radius: 3px;
+    }
+}
+
+// Comment section
+.vacancy-comment {
+    padding: 64px 0 41px;
+    background: $color-white;
+
+    @include media-up(sm) {
+        padding: 80px 0 60px;
+    }
+
+    @include media-up(md) {
+        padding: 90px 0;
+    }
+
+    @include media-up(lg) {
+        padding: 100px 0;
+    }
+}
+
+// Form section
+.vacancy-form {
+    padding: 70px 0;
+
+    @include media-up(sm) {
+        padding: 80px 0 100px;
+    }
+
+    @include media-up(md) {
+        padding: 90px 0 150px;
+    }
+
+    @include media-up(lg) {
+        padding: 100px 0 200px;
+    }
+}

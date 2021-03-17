@@ -1,0 +1,229 @@
+// Main section
+.author-main {
+    position: relative;
+    width: 100%;
+    padding: 50px 0 60px;
+    overflow: hidden;
+
+    @include media-up(sm) {
+        padding: 70px 0 60px;
+        border-bottom: 1px solid #F5F5F5;
+    }
+
+    @include media-up(md) {
+        padding: 90px 0 60px;
+    }
+
+    @include media-up(lg) {
+        padding: 116px 0 60px;
+    }
+
+    &__bg {
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: none;
+        pointer-events: none;
+
+        @include media-up(sm) {
+            display: block;
+            width: 300px;
+        }
+
+        @include media-up(md) {
+            width: 350px;
+        }
+
+        @include media-up(lg) {
+            width: 400px;
+        }
+
+        img {
+            max-width: 100%;
+        }
+    }
+}
+
+.author {
+    position: relative;
+
+    @include media-up(sm) {
+        max-width: 530px;
+    }
+
+    @include media-up(md) {
+        max-width: 600px;
+    }
+
+    @include media-up(lg) {
+        max-width: 640px;
+    }
+
+    &__avatar {
+        position: absolute;
+        right: 0;
+        top: 9px;
+        width: 78px;
+        height: 78px;
+        border-radius: 50%;
+        overflow: hidden;
+
+        @include media-up(sm) {
+            right: auto;
+            left: 0;
+            top: 5px;
+            width: 100px;
+            height: 100px;
+        }
+
+        @include media-up(md) {
+            top: 2px;
+            width: 120px;
+            height: 120px;
+        }
+
+        @include media-up(lg) {
+            top: 8px;
+            left: -150px;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &__name {
+        min-height: 96px;
+        padding-right: 80px;
+        margin-bottom: 23px;
+
+        @include media-up(sm) {
+            min-height: 110px;
+            padding-left: 130px;
+        }
+
+        @include media-up(md) {
+            min-height: 124px;
+            padding-left: 150px;
+        }
+
+        @include media-up(lg) {
+            min-height: 136px;
+            padding: 0;
+            margin-bottom: 14px;
+        }
+    }
+
+    &__position {
+        font-size: 20px;
+        line-height: 24px;
+        color: $color-gray;
+
+        @include media-up(sm) {
+            font-size: 22px;
+            line-height: 26px;
+        }
+
+        @include media-up(lg) {
+            font-size: 24px;
+            line-height: 30px;
+        }
+    }
+
+    &__text {
+        margin-top: 50px;
+        font-size: 16px;
+        line-height: 24px;
+
+        @include media-up(sm) {
+            margin-top: 44px;
+        }
+
+        @include media-up(md) {
+            margin-top: 38px;
+            font-size: 18px;
+            line-height: 28px;
+        }
+    }
+
+    &__socials {
+        margin-top: 67px;
+
+        @include media-up(sm) {
+            margin-top: 60px;
+        }
+
+        @include media-up(md) {
+            margin-top: 55px;
+        }
+
+        @include media-up(lg) {
+            margin-top: 50px;
+        }
+    }
+}
+
+// Posts section
+.author-posts {
+    padding: 68px 0;
+
+    @include media-up(sm) {
+        padding: 76px 0;
+    }
+
+    @include media-up(md) {
+        padding: 85px 0;
+    }
+
+    @include media-up(lg) {
+        padding: 94px 0;
+    }
+
+    h2 {
+        margin-bottom: 26px;
+
+        @include media-up(md) {
+            margin-bottom: 40px;
+        }
+
+        @include media-up(lg) {
+            margin-bottom: 60px;
+        }
+    }
+
+    .tabs__nav {
+        @include media-up(sm) {
+            margin-bottom: 50px;
+        }
+
+        @include media-up(md) {
+            margin-bottom: 70px;
+        }
+
+        @include media-up(lg) {
+            margin-bottom: 87px;
+        }
+    }
+}
+
+.other-posts {
+    padding: 24px 0 30px;
+
+    @include media-up(md) {
+        padding-bottom: 0;
+    }
+
+    h2 {
+        margin-bottom: 50px;
+
+        @include media-up(md) {
+            margin-bottom: 40px;
+        }
+
+        @include media-up(lg) {
+            margin-bottom: 30px;
+        }
+    }
+}

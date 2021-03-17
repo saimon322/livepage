@@ -1,0 +1,80 @@
+.tabs {
+    &__nav {
+        display: flex;
+        overflow-x: auto;
+        padding: 0 15px;
+        margin: 0 -15px 55px;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+
+        @include media-up(sm) {
+            padding: 0;
+            margin: 0 0 28px;
+        }
+
+        a {
+            position: relative;
+            display: block;
+            padding-bottom: 11px;
+            margin-right: 36px;
+            font-size: 18px;
+            line-height: 21px;
+            color: $color-main;
+            white-space: nowrap;
+            text-decoration: none;
+
+            &:before {
+                content: '';
+                position: absolute;
+                left: 0;
+                bottom: 0px;
+                display: block;
+                width: 0;
+                height: 2px;
+                background: $color-main;
+                transition: width .25s;
+            }
+
+            &:hover {
+                &:before {
+                    width: 100%;
+                }
+            }
+
+            &.active {
+                font-weight: bold;
+
+                &:before {
+                    width: 100%;
+                }
+            }
+
+            @include media-down(xs) {
+                &:last-child {
+                    position: relative;
+    
+                    &:after {
+                        content: '';
+                        display: block;
+                        position: absolute;
+                        right: -15px;
+                        width: 15px;
+                        height: 1px;
+                    }
+                }
+            }
+        }
+    }
+
+    &__item {
+        display: none;
+
+        &.active {
+            display: block;
+        }
+    }
+}

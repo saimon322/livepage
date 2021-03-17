@@ -16,15 +16,16 @@ body {
 
 body {
     background: #fff;
-    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
     font-size: 15px;
     color: #1a1b1b;
+    overflow-x: hidden;
 }
 
 input,
 select,
 textarea {
-    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
     font-size: 15px;
     color: #1a1b1b !important;
     outline: none !important;
@@ -102,12 +103,118 @@ h5,
 .h5,
 h6,
 .h6 {
-    font-family: 'kievit', Arial, Helvetica, sans-serif;
     margin: 0px 0px 0.7em 0px;
     padding: 0px;
-    font-weight: 900;
+    font-weight: 700;
+    line-height: 125%;
     color: #1a1b1b;
     line-height: normal;
+}
+
+h1,
+.h1 {
+    font-size: 40px;
+
+    @include media-up(sm) {
+        font-size: 42px;
+    }
+
+    @include media-up(md) {
+        font-size: 46px;
+    }
+
+    @include media-up(lg) {
+        font-size: 48px;
+    }
+}
+
+h2,
+.h2 {
+    font-size: 30px;
+
+    @include media-up(sm) {
+        font-size: 32px;
+    }
+
+    @include media-up(md) {
+        font-size: 36px;
+    }
+
+    @include media-up(lg) {
+        font-size: 38px;
+    }
+
+    &.title-big {
+        font-weight: 500;
+        font-size: 40px;
+
+        @include media-up(sm) {
+            font-size: 48px;
+        }
+
+        @include media-up(md) {
+            font-size: 56px;
+        }
+
+        @include media-up(lg) {
+            font-size: 64px;
+        }
+
+        strong {
+            font-weight: inherit;
+        }
+    }
+}
+
+h3,
+.h3 {
+    font-size: 24px;
+
+    @include media-up(sm) {
+        font-size: 26px;
+    }
+
+    @include media-up(md) {
+        font-size: 28px;
+    }
+
+    @include media-up(lg) {
+        font-size: 30px;
+    }
+}
+
+h4,
+.h4 {
+    font-size: 20px;
+
+    @include media-up(md) {
+        font-size: 22px;
+    }
+
+    @include media-up(lg) {
+        font-size: 24px;
+    }
+}
+
+h5,
+.h5 {
+    font-size: 18px;
+    line-height: 24px;
+
+    @include media-up(lg) {
+        line-height: 28px;
+    }
+}
+
+h6,
+.h6 {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+
+    @include media-up(lg) {
+        line-height: 28px;
+    }
 }
 
 .article>h2,
@@ -251,36 +358,6 @@ h6.lined:before,
     height: 1px;
 }
 
-h1,
-.h1 {
-    font-size: 60px;
-}
-
-h2,
-.h2 {
-    font-size: 48px;
-}
-
-h3,
-.h3 {
-    font-size: 36px;
-}
-
-h4,
-.h4 {
-    font-size: 24px;
-}
-
-h5,
-.h5 {
-    font-size: 18px;
-}
-
-h6,
-.h6 {
-    font-size: 16px;
-}
-
 h2.big-block {
     color: white;
     background-color: #262626;
@@ -303,143 +380,6 @@ h2.big-block .big-block-number {
     top: -0.9em;
     left: 50%;
     margin-left: -0.9em;
-}
-
-.single h1,
-.single>.h1,
-.article>h1,
-.article>.h1 {
-    font-size: 48px;
-}
-
-.article>h2,
-.article>.h2 {
-    font-size: 36px;
-}
-
-.article>h3,
-.article>.h3 {
-    font-size: 28px;
-}
-
-.article>h4,
-.article>.h4 {
-    font-size: 22px;
-}
-
-.article>h5,
-.article>.h5 {
-    font-size: 20px;
-}
-
-.article>h6,
-.article>.h6 {
-    font-size: 18px;
-}
-
-@media (max-width: 1199px) {
-
-    h1,
-    .h1 {
-        font-size: 54px;
-    }
-
-    h2,
-    .h2 {
-        font-size: 42px;
-    }
-
-    h3,
-    .h3 {
-        font-size: 32px;
-    }
-
-    .single h1,
-    .single .h1,
-    .article>h1,
-    .article>.h1 {
-        font-size: 42px;
-    }
-
-    .article>h2,
-    .article>.h2 {
-        font-size: 32px;
-    }
-
-    .article>h3,
-    .article>.h3 {
-        font-size: 22px;
-    }
-}
-
-@media (max-width: 991px) {
-
-    h1,
-    .h1 {
-        font-size: 48px;
-    }
-
-    h2,
-    .h2 {
-        font-size: 36px;
-    }
-
-    h3,
-    .h3 {
-        font-size: 28px;
-    }
-
-    .single h1,
-    .single .h1,
-    .article>h1,
-    .article>.h1 {
-        font-size: 36px;
-    }
-
-    .article>h2,
-    .article>.h2 {
-        font-size: 28px;
-    }
-
-    .article>h3,
-    .article>.h3 {
-        font-size: 20px;
-    }
-}
-
-@media (max-width: 767px) {
-
-    h1,
-    .h1 {
-        font-size: 42px;
-    }
-
-    h2,
-    .h2 {
-        font-size: 30px;
-    }
-
-    h3,
-    .h3 {
-        font-size: 24px;
-    }
-
-    .single h1,
-    .single .h1,
-    .article>h1,
-    .article>.h1 {
-        font-size: 32px;
-    }
-
-    .article>h2,
-    .article>.h2 {
-        font-size: 24px;
-    }
-
-    .article>h3,
-    .article>.h3 {
-        font-size: 16px;
-    }
 }
 
 .nobr {
@@ -521,7 +461,7 @@ a.phone-link:hover {
 /* --- fonts --- */
 .ff_h,
 .livepage__pages .lp__item .lp__title {
-    font-family: 'kievit';
+    
 }
 
 .fs-small {
@@ -3015,7 +2955,6 @@ body.page-id-24 .section-videote-top-wrapper {
     font-size: 97.2%;
     font-size: 91.2%;
     font-style: italic;
-    font-family: Trebuchet MS;
 }
 
 .article blockquote.person {
@@ -4039,6 +3978,13 @@ a.fa.fa-linkedin-square:hover {
     position: relative;
 }
 
+.owl-carousel .owl-nav .owl-prev, 
+.owl-carousel .owl-nav .owl-next {
+    background: none;
+    border: 0;
+    outline: none;
+}
+
 .owl-carousel .owl-prev.disabled,
 .owl-carousel .owl-next.disabled {
     opacity: 0.3;
@@ -4472,7 +4418,6 @@ a.fa.fa-linkedin-square:hover {
 
 .about-item {
     color: white;
-    font-family: 'Roboto', Arial, Helvetica, sans-serif;
     font-weight: 300;
     font-size: 5vw;
 
@@ -4482,7 +4427,7 @@ a.fa.fa-linkedin-square:hover {
 }
 
 .about-item b.Kievit {
-    font-family: 'Kievit';
+    
 }
 
 @media (min-width: 0px) {
@@ -5760,6 +5705,11 @@ button.ico {
     -moz-border-radius: 60px;
     -ms-border-radius: 60px;
     border-radius: 60px;
+    transition: .25s;
+
+    @include media-up(sm) {
+        font-size: 16px;
+    }
 }
 
 .btn input {
@@ -7795,7 +7745,6 @@ html.fancybox-enabled {
 .article .codecolorer-container * {
     font-size: 17px;
     line-height: 1.5882em;
-    font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
 }
 
 .article div.codecolorer-container {
@@ -7927,7 +7876,6 @@ html.fancybox-enabled {
     opacity: 0.8;
     margin-left: 2em;
     margin-right: 1em;
-    font-family: arial;
     font-size: 0.9em;
     position: relative;
     white-space: nowrap;
@@ -8126,7 +8074,6 @@ html.fancybox-enabled {
 
 .get-cheklist-for-im-form-2 .i-text {
     line-height: 2.7em;
-    font-family: 'kievit', Arial, Helvetica, sans-serif;
 }
 
 .get-cheklist-for-im-form-2 .i-text .i-str-1 {
@@ -8167,7 +8114,6 @@ html.fancybox-enabled {
 .get-cheklist-site-translate .i-text {
     font-size: 1.75em;
     line-height: 1.5em;
-    font-family: 'kievit', Arial, Helvetica, sans-serif;
     font-weight: 300;
 }
 
@@ -8210,7 +8156,6 @@ html.fancybox-enabled {
 
 .get-marketing-kit-for-it .i-text {
     font-size: 1.75em;
-    font-family: 'kievit', Arial, Helvetica, sans-serif;
     font-weight: 300;
 }
 
@@ -8256,7 +8201,6 @@ html.fancybox-enabled {
 .get-cheklist-agrarniy .i-text {
     font-size: 1.75em;
     line-height: 1.5em;
-    font-family: 'kievit', Arial, Helvetica, sans-serif;
     font-weight: 300;
 }
 
@@ -8554,7 +8498,6 @@ img.aligncenter {
 .page-brief-title {
     font-size: 18px;
     font-weight: bold;
-    font-family: inherit
 }
 
 .page-brief .form-msg {

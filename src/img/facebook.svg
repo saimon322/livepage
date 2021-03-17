@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="15.882" height="30" viewBox="0 0 15.882 30">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Контур_22872" data-name="Контур 22872" d="M10.992,13.864V.18h4.681l.7-5.334H10.992V-8.559c0-1.544.435-2.6,2.7-2.6h2.877v-4.771a39.771,39.771,0,0,0-4.194-.209c-4.151,0-6.994,2.485-6.994,7.049v3.933H.682V.18H5.377V13.864Z" fill="#f5f5f5" clip-rule="evenodd"/>
+    </clipPath>
+    <clipPath id="clip-path-2">
+      <path id="Контур_22871" data-name="Контур 22871" d="M-164,5877.537H2664.572V-1243H-164Z" transform="translate(164 1243)" fill="#f5f5f5"/>
+    </clipPath>
+    <clipPath id="clip-path-3">
+      <rect id="Прямоугольник_20692" data-name="Прямоугольник 20692" width="37.321" height="53.036" transform="translate(0 0)" fill="#f5f5f5"/>
+    </clipPath>
+    <clipPath id="clip-path-4">
+      <path id="Контур_22870" data-name="Контур 22870" d="M0,16.393H17.679V-17H0Z" transform="translate(0 17)" fill="#f5f5f5"/>
+    </clipPath>
+  </defs>
+  <g id="facebook" transform="translate(-0.682 16.136)" clip-path="url(#clip-path)">
+    <g id="Сгруппировать_29324" data-name="Сгруппировать 29324" transform="translate(-322.8 -2426.048)" clip-path="url(#clip-path-2)">
+      <g id="Сгруппировать_29323" data-name="Сгруппировать 29323" transform="translate(312.322 2398.393)" clip-path="url(#clip-path-3)">
+        <g id="Сгруппировать_29322" data-name="Сгруппировать 29322" transform="translate(9.821 9.821)" clip-path="url(#clip-path-4)">
+          <path id="Контур_22869" data-name="Контур 22869" d="M-4.318-21.136H31.207V28.507H-4.318Z" transform="translate(-4.164 13.011)" fill="#f5f5f5"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

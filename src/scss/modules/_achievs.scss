@@ -1,0 +1,98 @@
+// Main section
+.achievs-main {
+    padding: 50px 0 38px;
+
+    @include media-up(sm) {
+        padding: 70px 0 50px;
+    }
+
+    @include media-up(md) {
+        padding: 90px 0 65px;
+    }
+
+    @include media-up(lg) {
+        padding: 116px 0 79px;
+    }
+
+    &__content {
+        margin-bottom: 50px;
+
+        @include media-up(sm) {
+            display: flex;
+            margin-bottom: 80px;
+        }
+
+        @include media-up(md) {
+            margin-bottom: 120px;
+        }
+
+        @include media-up(lg) {
+            margin-bottom: 150px;
+        }
+    }
+
+    h1 {
+        margin-bottom: 26px;
+
+        @include media-up(sm) {
+            width: 35%;
+            margin-bottom: 0;
+            padding-right: 30px;
+        }
+    }
+
+    &__text {
+        font-size: 16px;
+        line-height: 24px;
+
+        @include media-up(sm) {
+            width: 65%;
+            padding-top: 15px;
+            font-size: 18px;
+            line-height: 26px;
+        }
+
+        @include media-up(md) {
+            font-size: 22px;
+            line-height: 30px;
+        }
+
+        @include media-up(lg) {
+            font-size: 24px;
+            line-height: 34px;
+        }
+
+        p {
+            margin-bottom: 0;
+        }
+    }
+
+    &__bg {
+        width: 100%;
+
+        img {
+            width: 100%;
+        }
+    }
+}
+
+// Ratings section
+.achievs-ratings {
+    padding: 38px 0 80px;
+
+    @include media-up(sm) {
+        padding: 50px 0 100px;
+    }
+
+    @include media-up(md) {
+        padding: 65px 0 130px;
+    }
+
+    @include media-up(lg) {
+        padding: 79px 0 154px;
+    }
+
+    h2 {
+        margin-bottom: 38px;
+    }
+}
