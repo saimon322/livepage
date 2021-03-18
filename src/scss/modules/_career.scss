@@ -429,20 +429,7 @@
     }
 
     h2 {
-        font-size: 30px;
         margin-bottom: 40px;
-
-        @include media-up(sm) {
-            font-size: 34px;
-        }
-
-        @include media-up(md) {
-            font-size: 38px;
-        }
-
-        @include media-up(lg) {
-            font-size: 42px;
-        }
     }
 }
 
@@ -463,20 +450,7 @@
     }
 
     h2 {
-        font-size: 30px;
         margin-bottom: 40px;
-
-        @include media-up(sm) {
-            font-size: 34px;
-        }
-
-        @include media-up(md) {
-            font-size: 38px;
-        }
-
-        @include media-up(lg) {
-            font-size: 42px;
-        }
     }
 
     .main-text {
@@ -487,63 +461,55 @@
         }
     }
 
-    .tabs {
-        margin-top: 50px;
-
-        @include media-up(lg) {
-            margin-top: 70px;
-        }
-    }
-
     .position {
         position: relative;
         padding: 27px 50px 30px 0;
         border-bottom: 1px solid $color-border;
-
+    
         &:first-child {
             border-top: 1px solid $color-border;
-
+    
             @include media-up(sm) {
                 border-top: 0;
             }
         }
-
+    
         @include media-up(sm) {
             display: flex;
             align-items: center;
             padding: 32px 0;
         }
-
+    
         @include media-up(md) {
             padding: 35px 0;
         }
-
+    
         @include media-up(lg) {
             padding: 40px 0;
         }
-
+    
         &__title {
             font-size: 20px;
             margin-bottom: 9px;
-
+    
             @include media-up(sm) {
                 width: 60%;
             }
-
+    
             @include media-up(md) {
                 font-size: 24px;
             }
         }
-
+    
         &__link {
             color: $color-main;
             text-decoration: none;
-
+    
             &:hover {
                 color: $color-red;
             }
         }
-
+    
         &__recomend {
             position: relative;
             font-size: 16px;
@@ -560,12 +526,12 @@
                 background: $color-red;
                 transition: width .25s;
             }
-
+    
             &:hover:after {
                 width: 100%;
             }
         }
-
+    
         &__button {
             position: absolute;
             top: 50%;
@@ -573,11 +539,11 @@
             right: 10px;
             width: 28px;
             height: 28px;
-
+    
             &:before,
             &:after {
                 content: '';
-                width: 28px;
+                width: 18px;
                 height: 3px;
                 position: absolute;
                 left: 0;
@@ -585,17 +551,31 @@
                 background: $color-main;
                 transition: background-color .25s;
             }
-
-            &:after {
-                transform: rotate(90deg);
+    
+            &:before {
+                top: 7px;
+                transform: rotate(45deg);
             }
-
+    
+            &:after {
+                top: 18px;
+                transform: rotate(-45deg);
+            }
+    
             &:hover {
                 &:before,
                 &:after {
                     background: $color-red;
                 }
             }
+        }
+    }
+
+    .tabs {
+        margin-top: 50px;
+
+        @include media-up(lg) {
+            margin-top: 70px;
         }
     }
 }
@@ -614,6 +594,10 @@
 
     @include media-up(lg) {
         padding: 82px 0 162px;
+    }
+
+    h2 {
+        margin-bottom: 40px;
     }
 
     .levels {
