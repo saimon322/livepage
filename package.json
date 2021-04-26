@@ -1,7 +1,7 @@
 {
-    "name": "sportstavki",
+    "name": "livepage",
     "version": "1.0.0",
-    "description": "Ставки на спорт онлайн",
+    "description": "Growth Marketing Agency",
     "main": "index.js",
     "scripts": {
         "start": "webpack-dev-server --open --mode development --config webpack.dev.js",
@@ -14,7 +14,7 @@
     ],
     "repository": {
         "type": "git",
-        "url": "https://github.com/saimon322/Sportstavki"
+        "url": "https://github.com/saimon322/livepage"
     },
     "author": "Saimon Kataev",
     "license": "MIT",
