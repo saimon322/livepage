@@ -16,6 +16,18 @@ $(document).ready(function () {
         return false;
     })
 
+    // Positions levels
+    $('.position__level').on('click', function (e) {
+        e.preventDefault();
+        let tab = $(this).attr('href'),
+            tabs = $('.levels');
+        tabs.find('.tabs__link').removeClass('active');
+        tabs.find(`.tabs__link[href='${tab}']`).addClass('active');
+        tabs.find('.tabs__item').removeClass('active');
+        $(tab).addClass('active');
+        return false;
+    })
+
     // Reviews carousel
     $('.reviews-slider').owlCarousel({
 		items : 1,
@@ -115,4 +127,12 @@ $(document).ready(function () {
             });
         }
     }
+
+    // vh fix
+    let vh = window.innerHeight * 0.01;
+    document.documentElement.style.setProperty('--vh', vh + 'px');
+    window.addEventListener('resize', () => {
+        let vh = window.innerHeight * 0.01;
+        document.documentElement.style.setProperty('--vh', vh + 'px');
+    }, {passive: true});
 })
