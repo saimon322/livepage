@@ -1,5 +1,5 @@
 // Main section
-.author-main {
+.single-author-main {
     position: relative;
     width: 100%;
     padding: 50px 0 60px;
@@ -44,7 +44,7 @@
     }
 }
 
-.author {
+.single-author {
     position: relative;
 
     @include media-up(sm) {
@@ -98,6 +98,7 @@
         min-height: 96px;
         padding-right: 80px;
         margin-bottom: 23px;
+        word-break: break-all;
 
         @include media-up(sm) {
             min-height: 110px;
@@ -149,24 +150,12 @@
     }
 
     &__socials {
-        margin-top: 67px;
-
-        @include media-up(sm) {
-            margin-top: 60px;
-        }
-
-        @include media-up(md) {
-            margin-top: 55px;
-        }
-
-        @include media-up(lg) {
-            margin-top: 50px;
-        }
+        margin-top: 50px;
     }
 }
 
 // Posts section
-.author-posts {
+.single-author-posts {
     padding: 68px 0;
 
     @include media-up(sm) {

@@ -292,6 +292,10 @@
                 }
             }
         }
+
+        span {
+            color: #fff;
+        }
     }
 
     .form-control {
@@ -315,4 +319,8 @@
             color: #fff !important;
         }
     }
+}
+
+.new-page .subscribe .form-red .form-msg span{
+  color: white !important;
 }

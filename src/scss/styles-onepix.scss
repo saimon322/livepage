@@ -1,8 +1,10 @@
 // Styles OnePix
 
+// Specifications
 @import "spec/vars";
 @import "spec/mixins";
 
+// Modules
 @import "modules/form";
 @import "modules/ratings";
 @import "modules/tabs";
@@ -14,8 +16,12 @@
 @import "modules/reviews";
 @import "modules/modal-new";
 
-@import "modules/career";
-@import "modules/vacancy";
-@import "modules/author";
-@import "modules/achievs";
-@import "modules/promo";
+// First 5 landings
+@import "pages/career";
+@import "pages/vacancy";
+@import "pages/author";
+@import "pages/achievs";
+@import "pages/promo";
+
+// Single case page
+@import "pages/single-case/single-case-intro"
