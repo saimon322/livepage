@@ -1,0 +1,127 @@
+.single-case-testimonial {
+    margin: 0 -15px;
+    background-color: $color-black-1;
+    background-image: url(../img/case/testimonial-bg.svg);
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: 170px;
+
+    @include media-up(md) {
+        background-size: 200px;
+    }
+
+    @include media-up(lg) {
+        background-size: 270px;
+    }
+    
+    &__wrapper {
+        padding: 70px 15px;
+
+        @include media-up(sm) {
+            margin: 0;
+            padding: 150px 50px;
+            display: flex;
+        }
+
+        @include media-up(md) {
+            padding: 150px 120px 150px 50px;            
+        }
+    
+        @include media-up(lg) {
+            padding: 175px 190px 175px 100px;
+        }
+    }
+
+    &__author {
+        margin-bottom: 30px;
+
+        @include media-up(sm) {
+            width: 34%;
+            margin-bottom: 0;
+            padding: 25px 0;
+        }
+
+        @include media-up(md) {
+            padding: 35px 0;
+        }
+
+        &-photo {
+            width: 100px;
+            height: 100px;
+            margin-bottom: 20px;
+            border-radius: 50%;
+            overflow: hidden;
+
+            @include media-up(sm) {
+                width: 120px;
+                height: 120px;
+                margin-bottom: 30px;
+            }
+
+            @include media-up(md) {
+                width: 140px;
+                height: 140px;
+                margin-bottom: 40px;
+            }
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        &-name {
+            color: #fff;
+            margin-bottom: 6px;
+        }
+
+        &-post {
+            color: $color-gray-1;
+        }
+    }
+
+    &__content {
+        position: relative;
+        padding-top: 50px;
+
+        @include media-up(sm) {
+            flex: 1 1 0;
+            padding-top: 70px;
+        }
+
+        &:before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            display: block;
+            width: 30px;
+            height: 25px;
+            background: url(img/quotes-white.svg) center / contain no-repeat;
+
+            @include media-up(sm) {
+                width: 42px;
+                height: 33px;
+            }
+        }
+    }
+
+    &__text {
+        font-size: 20px;
+        color: #fff;
+
+        @include media-up(sm) {
+            font-size: 22px;
+        }
+
+        @include media-up(md) {
+            font-size: 30px;
+            line-height: 40px;
+        }
+
+        p:last-child {
+            margin-bottom: 0;
+        }
+    }
+}

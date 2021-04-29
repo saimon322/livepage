@@ -1,0 +1,33 @@
+.single-case-discovery {
+    margin: 0 -15px;
+    padding: 30px 15px;
+    border-top: 1px solid #E6E6E6;
+    border-bottom: 1px solid #E6E6E6;
+
+    @include media-up(sm) {
+        margin: 0;
+        display: flex;
+        align-items: center;
+        padding: 90px 100px 70px;
+        border: 1px solid #E6E6E6;
+    }
+
+    &__content {
+        margin-bottom: 30px;
+
+        @include media-up(sm) {
+            width: 50%;
+            margin-bottom: 0;
+        }
+    }
+
+    &__img {
+        @include media-up(sm) {
+            width: 50%;
+        }
+
+        img {
+            max-width: 100%;
+        }
+    }
+}

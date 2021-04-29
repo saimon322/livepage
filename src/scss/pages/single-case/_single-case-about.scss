@@ -1,0 +1,57 @@
+.single-case-about {
+    padding: 60px 0 50px;
+
+    @include media-up(sm) {
+        padding: 80px 0 70px;
+
+        .col-sm-8 {
+            float: right;
+        }
+    }
+
+    @include media-up(lg) {
+        padding: 120px 0 110px;
+    }
+
+    &__aside {
+        max-width: 260px;
+
+        &:not(:last-child) {
+            margin-bottom: 20px;
+    
+            @include media-up(md) {
+                margin-bottom: 50px;
+            }            
+        }
+
+        h5 {
+            margin-bottom: 14px;
+        }
+
+        p {
+            margin-bottom: 0;
+        }
+    }
+
+    &__main {
+        &:not(:last-child) {
+            margin-bottom: 30px;
+    
+            @include media-up(md) {
+                margin-bottom: 60px;
+            }            
+        }
+
+        h2 {
+            @include media-up(lg) {
+                font-size: 48px;
+            }
+        }
+
+        p {
+            @include media-up(lg) {
+                font-size: 18px;
+            }
+        }
+    }
+}

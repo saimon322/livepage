@@ -1,0 +1,23 @@
+.single-case-textblock {
+    padding: 70px 0;
+
+    @include media-up(sm) {
+        padding: 110px 50px;
+        max-width: 870px;
+        margin: 0 auto;
+    }
+
+    @include media-up(md) {
+        padding: 150px 50px 130px;
+    }
+
+    h2 {
+        font-weight: normal;
+    }
+
+    p {
+        @include media-up(sm) {
+            font-size: 18px;
+        }
+    }
+}
