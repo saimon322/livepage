@@ -1,6 +1,12 @@
 <%=_.template(require('../parts/main-header.html'))() %>
 
-<div class="new-page">
+<style>
+    :root {
+        --case-color: red;
+    }
+</style>
+
+<div class="single-case">
     <section class="single-case-intro">
         <div class="single-case-intro__bg" style="background-image: url(img/case/pingle-intro-bg.jpg);"></div>
         <div class="single-case-intro__wrapper">
@@ -151,29 +157,39 @@
         </section>
 
         <section class="single-case-textblock">
-            <h2>Стратегия развития<br> <b>Pingle Studio</b></h2>
-            <p>Работа над каждым проектом по дизайну начинается c <b>маркетингового<br> исследования, SEO-подготовки и создания структуры сайта</b>.<br> Только при таком флоу проект будем успешным в Digital.</p>
+            <h2>
+                <span class="fs_normal">Стратегия развития</span><br>
+                <b>Pingle Studio</b>
+            </h2>
+            <div class="fs_18">
+                <p>Работа над каждым проектом по дизайну начинается c <b>маркетингового<br> исследования, SEO-подготовки и создания структуры сайта</b>.<br> Только при таком флоу проект будем успешным в Digital.</p>
+            </div>
         </section>
 
         <section class="single-case-discovery">
             <div class="single-case-discovery__content">
-                <div class="single-case-discovery__subtitle">DISCOVERY</div>
-                <h3 class="single-case-discovery__title">Маркетинговое исследование перед разработкой</h3>
-                <div class="single-case-discovery__text">
+                <div class="single-case__subtitle">Discovery</div>
+                <h3>Маркетинговое исследование перед разработкой</h3>
+                <div class="fs_18">
                     <p>Наша команда работала с партнером Pingle из США. Совместными усилиями мы провели исследование ниши и конкурентов, создали портреты идеальных клиентов (Ideal Customer Profiles), структуру сайта и User Flow. Разработали визуальную концепцию, которая позволила донести уникальное ценностное предложение и позиционирование.</p>
                 </div>
-                <div class="single-case-discovery__details">
-                    <h6>При разработке дизайна сайта мы:</h6>
-                    <ul>
-                        <li>Делали акцент на Case Studies и ключевых клиентах Pingle Studio.</li>
-                        <li>Добавили актуальные для игровой индустрии визуальные и интерактивные решения.</li>
-                    </ul>
-                </div>
+                <h6 class="fs_bold">При разработке дизайна сайта мы:</h6>
+                <ul>
+                    <li>Делали акцент на Case Studies и ключевых клиентах Pingle Studio.</li>
+                    <li>Добавили актуальные для игровой индустрии визуальные и интерактивные решения.</li>
+                </ul>
             </div>
             <div class="single-case-discovery__img">
                 <img src="img/case/discovery.png" alt="">
             </div>
         </section>
+
+        <div class="single-case-research">
+            <div class="single-case__wrapper">
+                <h2>Мы исследовали нишу разработки игр и предложили решения для роста бизнеса</h2>
+                <img src="img/case/research-hero.png" alt="">
+            </div>
+        </div>
     </div>
 </div>
 

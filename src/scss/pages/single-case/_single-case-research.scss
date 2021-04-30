@@ -1,0 +1,53 @@
+.single-case-research {
+    position: relative;
+    margin: 100px -15px 0;
+    padding: 0 15px 200px;
+    background-image: url(img/case/research-bg.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top center;
+
+    @include media-up(sm) {
+        margin-top: 150px;
+        padding: 60px 100px 150px;
+    }
+
+    @include media-up(md) {
+        margin-top: 200px;
+        padding: 60px 100px 150px;
+    }
+
+    @include media-up(lg) {
+        margin-top: 242px;
+        padding: 60px 100px 160px;
+    }
+
+    h2 {
+        margin-bottom: 0;
+        max-width: 400px;
+
+        @include media-up(sm) {
+            max-width: 70%;
+        }
+
+        @include media-up(md) {
+            max-width: 50%;
+        }
+    }
+
+    img {
+        position: absolute;
+        z-index: 1;
+        right: 0;
+        bottom: 0;
+        width: 320px;
+
+        @include media-up(sm) {
+            width: 60%;
+        }
+
+        @include media-up(md) {
+            width: 66%;
+        }
+    }
+}

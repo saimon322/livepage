@@ -1,5 +1,5 @@
 .single-case-textblock {
-    padding: 70px 0;
+    padding: 70px 0 50px;
 
     @include media-up(sm) {
         padding: 110px 50px;
@@ -9,15 +9,5 @@
 
     @include media-up(md) {
         padding: 150px 50px 130px;
-    }
-
-    h2 {
-        font-weight: normal;
-    }
-
-    p {
-        @include media-up(sm) {
-            font-size: 18px;
-        }
     }
 }

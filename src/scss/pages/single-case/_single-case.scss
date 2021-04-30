@@ -1,0 +1,19 @@
+:root {
+    --case-color: $color-gray-1;
+}
+
+.single-case {
+    h2 {
+        @include media-up(lg) {
+            font-size: 48px;
+        }
+    }
+
+    &__subtitle {
+        text-transform: uppercase;
+        color: var(--case-color);
+        line-height: 100%;
+        margin-bottom: 10px;
+        letter-spacing: 1.5px;
+    }
+}

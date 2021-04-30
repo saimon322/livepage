@@ -42,12 +42,6 @@
             }            
         }
 
-        h2 {
-            @include media-up(lg) {
-                font-size: 48px;
-            }
-        }
-
         p {
             @include media-up(lg) {
                 font-size: 18px;
