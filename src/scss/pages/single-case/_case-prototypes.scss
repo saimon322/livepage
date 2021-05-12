@@ -1,0 +1,18 @@
+.case-prototypes {
+    background: $color-white;
+    padding: 50px 0;
+
+    @include media-up(sm) {
+        padding: 70px 0;        
+    }
+
+    &__content {
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        
+        img {
+            width: 150%;
+        }
+    }
+}

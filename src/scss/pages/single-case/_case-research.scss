@@ -1,6 +1,6 @@
-.single-case-research {
+.case-research {
     position: relative;
-    margin: 100px -15px 0;
+    margin-top: 100px;
     padding: 0 15px 200px;
     background-image: url(img/case/research-bg.png);
     background-repeat: no-repeat;
@@ -38,11 +38,12 @@
     img {
         position: absolute;
         z-index: 1;
-        right: 0;
+        right: 15px;
         bottom: 0;
         width: 320px;
 
         @include media-up(sm) {
+            right: 0;
             width: 60%;
         }
 

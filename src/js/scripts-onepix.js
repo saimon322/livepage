@@ -133,25 +133,58 @@ $(document).ready(function () {
             });
         }
     }
-
-    // Single case AOS animations
     
 
-    // Single case carousel
-    const caseSliderQuery = '.single-case-slider';
-    if ($(caseSliderQuery).length) {
-        const caseSlider = new Swiper(caseSliderQuery, {
+    // Single case intro carousel
+    const caseIntroSliderQuery = '.case-intro__slider';
+    if ($(caseIntroSliderQuery).length) {
+        const caseIntroSlider = new Swiper(caseIntroSliderQuery, {
             slidesPerView : 3,
             slideToClickedSlide: true,
             centeredSlides: true,
             loop: true,
             speed: 600,
             autoplay: {
-                delay: 2000,
+                delay: 2500,
                 disableOnInteraction: false
             },
         })
     }
+
+    // Single case design carousel
+    const caseDesignSliderQuery = '.case-design__slider';
+    if ($(caseDesignSliderQuery).length) {
+        let titles = [];
+        $(`${caseDesignSliderQuery} .swiper-slide`).each(function(i) {
+            titles.push($(this).data('title'))
+        });
+        const caseDesignSlider = new Swiper(caseDesignSliderQuery, {
+            slidesPerView : 3,
+            slideToClickedSlide: true,
+            centeredSlides: true,
+            loop: false,
+            speed: 600,
+            autoHeight: true,
+            pagination: {
+              el: '.swiper-pagination',
+              clickable: true,
+              renderBullet: function (index, className) {
+                return `<span class="${className}">${titles[index]}</span>`;
+              },
+            },
+        })
+    }
+
+    // Single case design screens
+    // const $caseDesing = $('.single-case-design');
+    // if ($caseDesing.length) {
+    //     const $caseDesingTabs = $('.single-case-design__tabs');
+    //     const $caseDesingScreens = $('.single-case-design__screens');
+    //     $caseDesingTabs.on('click', function() {
+    //         $caseDesingScreens.toggleClass('active');
+    //     })
+    // }
+
 
     // vh fix
     let vh = window.innerHeight * 0.01;

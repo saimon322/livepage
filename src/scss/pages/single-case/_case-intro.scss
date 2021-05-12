@@ -1,4 +1,4 @@
-.single-case-intro {
+.case-intro {
     position: relative;
     height: calc(100vh - 75px);
     height: calc(var(--vh, 1vh)*100 - 75px);
@@ -149,7 +149,7 @@
         }
     }
 
-    &__slider {
+    &__bottom {
         height: 35%;
         max-height: 170px;
         padding-top: 30px;
@@ -163,72 +163,54 @@
             max-height: 300px;
         }
     }
-}
 
-.single-case-slider {
-    .swiper-slide {
-        position: relative;
-        display: flex;
-        justify-content: center;
-        opacity: 0;
-        transition: .6s;
-        transition-property: transform, opacity;
-        transform: translateY(20%);
-        cursor: pointer;
+    &__slider {
+        .swiper-slide {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            opacity: 0;
+            transition: .6s;
+            transition-property: transform, opacity;
+            transform: translateY(20%);
+            cursor: pointer;
 
-        &-prev,
-        &-active,
-        &-next {
-            opacity: 0.33;
-        }
-
-        &-prev {
-            .single-case-slider__slide {
-                transform: translate(30%, 0);
+            &-prev,
+            &-next {
+                opacity: 0.33;
             }
-        }
 
-        &-next {
-            .single-case-slider__slide {
-                transform: translate(-30%, 0);
+            &-prev {
+                .case-intro__slide {
+                    transform: translate(30%, 0);
+                }
             }
-        }
 
-        &-active {
-            z-index: 1;
-            transform: none;
-            cursor: default;
-            opacity: 1;
+            &-next {
+                .case-intro__slide {
+                    transform: translate(-30%, 0);
+                }
+            }
 
-            .single-case-slider__slide {
-                transform: translate(0, 0);
+            &-active {
+                z-index: 1;
+                transform: none;
+                cursor: default;
+                opacity: 1;
+
+                .case-intro__slide {
+                    transform: translate(0, 0);
+                }
+
+                .case-screen:after {
+                    opacity: 0;
+                }
             }
         }
     }
 
     &__slide {
-        flex-shrink: 0;
-        width: 60vw;
-        padding: 1.84vw;
-        border-radius: 2vw;
-        background: #1C1E23;
-        border: 1px solid #282A31;
         transform: translate(0, 50%);
         transition: transform .6s;
-
-        @include media-up(sm) {
-            width: 45vw;
-            padding: 1.38vw;
-            border-radius: 1.52vw;
-        }
-
-        img {
-            width: 100%;
-            border-radius: 0.75vw;
-
-            @include media-up(sm) {
-                border-radius: 0.55vw;                
-            }
-        }
     }
 }

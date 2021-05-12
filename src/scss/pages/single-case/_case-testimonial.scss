@@ -1,7 +1,6 @@
-.single-case-testimonial {
-    margin: 0 -15px;
+.case-testimonial {
     background-color: $color-black-1;
-    background-image: url(../img/case/testimonial-bg.svg);
+    background-image: url(img/case/testimonial-bg.svg);
     background-repeat: no-repeat;
     background-position: top right;
     background-size: 170px;
@@ -78,6 +77,7 @@
 
         &-post {
             color: $color-gray-1;
+            margin-bottom: 0;
         }
     }
 

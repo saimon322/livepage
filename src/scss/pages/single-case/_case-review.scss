@@ -1,0 +1,148 @@
+.case-review {
+    position: relative;
+    background-color: $color-black-1;
+
+    &:before,
+    &:after {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-repeat: no-repeat;
+        background-size: 25vw;
+
+        @include media-up(sm) {
+            background-size: 20vw;            
+        }
+
+        @include media-up(lg) {
+            background-size: 15vw;
+        }
+    }
+
+    &:before {
+        background-image: url(img/case/review-bg-1.svg);
+        background-position: left top;
+
+        @include media-down(xs) {
+            display: none;
+        }
+    }
+
+    &:after {
+        background-image: url(img/case/review-bg-2.svg);
+        background-position: right bottom;
+
+        @include media-down(xs) {
+            background-position: right bottom 100px;
+        }
+    }
+    
+    &__wrapper {
+        position: relative;
+        z-index: 1;
+        padding: 50px 15px 80px;
+
+        @include media-up(sm) {
+            margin: 0;
+            padding: 120px 0 120px 50px;
+            display: flex;
+        }
+    
+        @include media-up(lg) {
+            padding: 145px 0 170px 44px;
+        }
+    }
+
+    &__content {
+        position: relative;
+        padding-top: 50px;
+
+        @include media-up(sm) {
+            width: 60%;
+            padding-top: 70px;
+            margin: 0 auto;
+        }
+
+        @include media-up(lg) {
+            width: 70%;
+            max-width: 820px;
+        }
+
+        &:before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            display: block;
+            width: 30px;
+            height: 25px;
+            background: url(img/quotes-white.svg) center / contain no-repeat;
+
+            @include media-up(sm) {
+                width: 42px;
+                height: 33px;
+            }
+        }
+    }
+
+    &__text {
+        font-size: 20px;
+        color: #fff;
+        margin-bottom: 80px;
+
+        @include media-up(sm) {
+            font-size: 22px;
+            margin-bottom: 60px;
+        }
+
+        @include media-up(md) {
+            font-size: 30px;
+            line-height: 40px;
+        }
+
+        p:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &__author {
+        display: flex;
+
+        &-photo {
+            flex-shrink: 0;
+            width: 50px;
+            height: 50px;
+            margin-right: 20px;
+            border-radius: 50%;
+            overflow: hidden;
+
+            @include media-up(sm) {
+                width: 70px;
+                height: 70px;
+            }
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        &-name {
+            color: #fff;
+            margin-bottom: 6px;
+        }
+
+        &-info {
+            padding-top: 6px;
+        }
+
+        &-post {
+            color: $color-gray-1;
+            margin-bottom: 0;
+        }
+    }
+}

@@ -1,6 +1,5 @@
-.single-case-gallery {
-    margin: 0 -7.5px;
-    padding: 7.5px 0;
+.case-gallery {
+    padding: 7.5px;
 
     @include media-up(sm) {
         display: flex;

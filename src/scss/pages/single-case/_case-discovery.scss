@@ -1,15 +1,11 @@
-.single-case-discovery {
-    margin: 0 -15px;
+.case-discovery {
     padding: 50px 15px 20px;
-    border-top: 1px solid #E6E6E6;
-    border-bottom: 1px solid #E6E6E6;
 
     @include media-up(sm) {
         margin: 0;
         display: flex;
         align-items: center;
         padding: 70px 10px 50px 50px;
-        border: 1px solid #E6E6E6;
     }
 
     @include media-up(md) {

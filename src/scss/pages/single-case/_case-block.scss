@@ -1,0 +1,29 @@
+.case-block {
+    margin: 30px 0;
+    padding: 40px 15px 0;
+    text-align: center;
+
+    @include media-up(sm) {
+        padding: 70px 0 0;
+    }
+
+    @include media-up(md) {
+        padding: 90px 0 0;
+    }
+
+    @include media-up(lg) {
+        padding: 110px 0 0;
+    }
+
+    &__img {
+        max-width: 100%;
+
+        @include media-up(sm) {
+            margin-top: 70px;
+        }
+
+        @include media-up(lg) {
+            margin-top: 90px;
+        }
+    }
+}

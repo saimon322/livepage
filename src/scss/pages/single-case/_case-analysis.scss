@@ -1,0 +1,86 @@
+.case-analysis {
+    padding: 50px 15px 30px;
+    background: #F7F7F7;
+
+    @include media-up(sm) {
+        padding: 70px 50px 30px;
+    }
+
+    @include media-up(md) {
+        padding: 90px 70px 50px;        
+    }
+
+    @include media-up(lg) {
+        padding: 110px 140px 80px 100px;
+    }
+
+    &__text {
+        @include media-up(sm) {
+            max-width: 600px;
+        }
+
+        p {
+            line-height: 28px;
+        }
+    }
+
+    &__list {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        margin-top: 30px;
+        counter-reset: list;
+        font-size: 16px;
+
+        @include media-up(sm) {
+            margin-top: 40px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        li {
+            counter-increment: list;
+            position: relative;
+            padding-top: 50px;
+
+            @include media-up(sm) {
+                width: calc((100% - 40px) / 2);
+                margin-bottom: 20px;
+                padding-top: 60px;
+            }
+
+            @include media-up(md) {
+                width: calc((100% - 80px) / 2);
+                padding-top: 90px;
+                margin-bottom: 38px;
+            }
+            
+            &:before {
+                content: counter(list, decimal-leading-zero);
+                position: absolute;
+                left: 0;
+                top: 0;
+                display: block;
+                font-size: 30px;
+                font-weight: bold;
+
+                @include media-up(sm) {
+                    font-size: 32px;
+                }
+
+                @include media-up(md) {
+                    font-size: 36px;
+                }
+
+                @include media-up(lg) {
+                    font-size: 48px;
+                }
+            }
+
+            p {
+                line-height: 28px;
+            }
+        }
+    }
+}

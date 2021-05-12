@@ -1,0 +1,113 @@
+.case-mobile {
+    padding: 50px 0;
+
+    @include media-up(sm) {
+        padding: 120px 0;
+    }
+
+    @include media-up(lg) {
+        padding: 165px 0;
+    }
+
+    &__content {
+        position: relative;
+        margin: 0 auto;
+        width: 70%;
+        max-width: 575px;
+        margin-top: 80px;
+
+        @include media-up(sm) {
+            margin-top: 150px;
+        }
+    }
+
+    &__scene {
+        position: relative;
+        width: 100%;
+        padding-top: 100%;
+    }
+
+    &__main {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+    }
+
+    &__icons {
+        position: absolute;
+        z-index: 1;
+        left: -10%;
+        top: -5%;
+        width: 110%;
+    }
+
+    &__circles {
+        position: absolute;
+        z-index: 2;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    &__circle {
+        position: absolute;
+        border-radius: 50%;
+        overflow: hidden;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+
+        img {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        &:nth-child(1) {
+            width: 30%;
+            left: 35%;
+            top: 35%;
+            padding-top: 30%;
+            transform: translate(-140%, 140%);
+            animation-name: circleMove1;
+
+            @keyframes circleMove1 {
+                0%   {transform: rotate(0deg)   translate(-140%, 140%) rotate(0deg);   }
+                100% {transform: rotate(360deg) translate(-140%, 140%) rotate(-360deg);}
+            }
+        }
+
+        &:nth-child(2) {
+            width: 14%;
+            left: 43%;
+            top: 43%;
+            padding-top: 14%;
+            transform: translate(-350%, -265%);
+            animation-name: circleMove2;
+
+            @keyframes circleMove2 {
+                0%   {transform: rotate(0deg)   translate(-350%, -265%) rotate(0deg);   }
+                100% {transform: rotate(360deg) translate(-350%, -265%) rotate(-360deg);}
+            }
+        }
+
+        &:nth-child(3) {
+            width: 18%;
+            left: 41%;
+            top: 41%;
+            padding-top: 18%;
+            transform: translate(340%, -100%);
+            animation-name: circleMove3;
+
+            @keyframes circleMove3 {
+                0%   {transform: rotate(0deg)   translate(340%, -100%) rotate(0deg);   }
+                100% {transform: rotate(360deg) translate(340%, -100%) rotate(-360deg);}
+            }
+        }
+    }
+}
