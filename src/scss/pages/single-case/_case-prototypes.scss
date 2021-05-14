@@ -8,11 +8,10 @@
 
     &__content {
         overflow: hidden;
-        display: flex;
-        justify-content: center;
         
         img {
             width: 150%;
+            margin: 0 -25%;
         }
     }
 }

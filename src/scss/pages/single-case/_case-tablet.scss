@@ -43,6 +43,7 @@
     &__content {
         @include media-up(sm) {
             position: absolute;
+            z-index: 1;
             top: 0;
             right: 3%;
             width: 50%;
