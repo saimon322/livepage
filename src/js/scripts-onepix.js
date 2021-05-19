@@ -142,6 +142,7 @@ $(document).ready(function () {
             slidesPerView : 3,
             slideToClickedSlide: true,
             centeredSlides: true,
+            // allowTouchMove: false,
             loop: true,
             speed: 600,
             autoplay: {
@@ -162,6 +163,7 @@ $(document).ready(function () {
             slidesPerView : 3,
             slideToClickedSlide: true,
             centeredSlides: true,
+            // allowTouchMove: false,
             loop: false,
             speed: 600,
             autoHeight: true,
@@ -172,18 +174,32 @@ $(document).ready(function () {
                 return `<span class="${className}">${titles[index]}</span>`;
               },
             },
+            on: {
+                slideChange: function () {
+                    // Pagination centered animate
+                    let $tabsEl = $(this.pagination.el);
+                    let $newTabEl = $tabsEl.find('.swiper-pagination-bullet-active');
+                    let newTabLeft = $newTabEl.position().left;
+                    let newTabHalf = $newTabEl.width() / 2;
+                    let tabsHalf = $tabsEl.width() / 2;
+                    let oldScroll = $tabsEl.scrollLeft();
+                    let newScroll = oldScroll + newTabLeft - tabsHalf + newTabHalf + 30;
+                    $tabsEl.animate({scrollLeft: newScroll}, 500);
+
+                    // Autoheight fix
+                    setTimeout(() => {
+                        let $wrapperEl = $(this.$wrapperEl);
+                        let wrapperHeight = $wrapperEl.outerHeight();
+                        let $activeSlideEl = $(this.$el).find('.swiper-slide-active');
+                        let activeSlideHeight = $activeSlideEl.outerHeight();
+                        if (wrapperHeight - activeSlideHeight > 10) {
+                            $wrapperEl.height(activeSlideHeight);
+                        }
+                    }, 600)
+                },
+            },
         })
     }
-
-    // Single case design screens
-    // const $caseDesing = $('.single-case-design');
-    // if ($caseDesing.length) {
-    //     const $caseDesingTabs = $('.single-case-design__tabs');
-    //     const $caseDesingScreens = $('.single-case-design__screens');
-    //     $caseDesingTabs.on('click', function() {
-    //         $caseDesingScreens.toggleClass('active');
-    //     })
-    // }
 
 
     // vh fix
