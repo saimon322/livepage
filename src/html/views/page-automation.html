@@ -1,0 +1,86 @@
+<%=_.template(require('../parts/main-header.html'))() %>
+
+<section class="auto-main">
+    <div class="auto-main__container container">
+        <div class="auto-main__main">
+            <div class="pathway">
+                <a href="https://new.livepage.pro">Livepage</a>
+                <em>/</em>
+                <a href="https://new.livepage.pro">Автоматизация маркетинга</a>
+            </div>
+            <h1 class="auto-main__title">
+                Автоматизация маркетинга<br>
+                <strong class="red">Email, Push, SMS</strong>
+            </h1>
+            <div class="auto-main__text">
+                Сделаем платное продвижение прибыльным и запустим рост продаж
+            </div>
+            <a href="#auto-form" class="auto-main__btn btn btn-danger">
+                Обсудить проект
+            </a>
+        </div>
+
+        <div class="auto-main__info">
+            <img src="img/automation/main-img.png" alt="" class="auto-main__img">
+            <div class="auto-main__growth">
+                
+            </div>
+        </div>
+
+        <div class="auto-main__partners">
+            <a href="https://www.google.ru/partners/?hl=ru#a_profile;idtf=1653027949" target="_blank" rel="nofollow noopener" class="auto-main__partner">
+                <img src="img/partner-1.svg" >
+            </a>
+            <a href="https://www.goodfirms.co/company/livepage" target="_blank" rel="nofollow noopener" class="auto-main__partner">
+                <img src="img/partner-2.svg" >
+            </a>
+            <a href="https://clutch.co/profile/livepage?utm_source=widget&amp;utm_medium=widget_2&amp;utm_campaign=widget&amp;utm_content=logo" target="_blank" rel="nofollow noopener" class="auto-main__partner">
+                <img src="img/partner-3.svg" >
+            </a>
+            <a href="#" class="auto-main__partner">
+                <img src="img/rating-1.png" alt="" loading='lazy'>
+            </a>
+        </div>
+    </div>
+</section>
+
+<section class="auto-form" id="auto-form">
+    <div class="container">
+        <h2 class="auto-form__title title-big">
+            Зарабатывайте больше с автоматизацией маркетинга! 
+        </h2>
+        
+        <form class="form">
+            <div class="form__inputs">
+                <div class="inputbox inputbox_placeholder">
+                    <div class="placeholder">Представьтесь<span>*</span></div>
+                    <input name="name" class="form-control" type="text" value="">
+                </div>
+                <div class="inputbox inputbox_placeholder">
+                    <div class="placeholder">Эл.почта<span>*</span></div>
+                    <input name="email" class="form-control" type="text" value="">
+                </div>
+                <div class="inputbox inputbox_placeholder inputbox_radd">
+                    <div class="placeholder">Адрес сайта</div>
+                    <input name="linkedin" class="form-control" type="text" value="">
+                    <div class="radd"><a href="#" class="order-form-site-disable">Ещё нет сайта?</a></div>
+                </div>
+                <div class="inputbox inputbox_placeholder">
+                    <div class="placeholder">Телефон</div>
+                    <input name="phone" class="form-control" type="text" value="">
+                </div>
+            </div>
+    
+            <div class="inputbox inputbox_placeholder">
+                <div class="placeholder">Ваш комментарий</div>
+                <textarea name="message" class="form-control" cols="" rows=""></textarea>
+            </div>
+                
+            <button class="form__btn btn btn-danger" name="send" type="submit" value="OK">Отправить</button>
+
+            <div class="form-msg"></div>
+        </form>
+    </div>
+</section>
+
+<%=_.template(require('../parts/main-footer.html'))() %>

@@ -32,7 +32,8 @@ module.exports = (env, argv) => {
             },
             host: localIpAddress,
             port: 8081,
-            hot: true,
+            // hot: true,
+            liveReload: true,
             // writeToDisk: true,
         },
         watchOptions: {
